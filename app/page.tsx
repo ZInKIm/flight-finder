@@ -59,6 +59,7 @@ function encodeTfs(from: string, to: string, departDate: string, returnDate?: st
 }
 
 function makeURL(from: string, to: string, departDate: string, returnDate?: string, adults: number = 1) {
+  console.log('makeURL adults:', adults);
   return `https://www.google.com/travel/flights/search?tfs=${encodeTfs(from, to, departDate, returnDate, adults)}`;
 }
 
